@@ -6,7 +6,7 @@ h1 {
   font-size: 100px;
   text-align:center;
   padding-bottom: 120px;
-  border-radius: 15px;
+  border-radius: 9999px;
 
 }
 
@@ -17,18 +17,14 @@ h1 {
    animation: rainbow 3s infinite;
 }
 @-webkit-keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}
+	33%{color: red;}
+	66%{color: green;}
+	100%{color: blue;}
 }
 @keyframes rainbow{
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	80%{color: blue;}
-	100%{color: orange;}
+	33%{color: red;}
+	66%{color: green;}
+	100%{color: blue;}
 }
 
 
@@ -59,4 +55,9 @@ h1 {
 
 h2 {
   color:blue;
+}
+
+.first-info {
+  font-family: 'Sarpanch', sans-serif;
+  color: white;
 }
