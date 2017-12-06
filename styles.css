@@ -1,4 +1,4 @@
-h1 {
+.yuss {
   color:white;
   padding: 100px;
   background-color: grey;
@@ -12,7 +12,7 @@ h1 {
 
 
 
-h1 {
+.yuss {
   -webkit-animation: rainbow 3s infinite;
    animation: rainbow 3s infinite;
 }
@@ -60,4 +60,20 @@ h2 {
 .first-info {
   font-family: 'Sarpanch', sans-serif;
   color: white;
+}
+
+input[type="text"], textarea {
+
+  background-color : #d1d1d1;
+
+
+}
+
+input
+{
+    -moz-border-radius:10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    -khtml-border-radius: 10px; /* KHTML */
+    border-radius: 10px; /* CSS3 */
+    behavior:url("border-radius.htc");
 }
