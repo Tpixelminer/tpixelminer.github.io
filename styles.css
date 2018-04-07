@@ -77,3 +77,7 @@ input
     border-radius: 10px; /* CSS3 */
     behavior:url("border-radius.htc");
 }
+
+.clip {
+  clip: rect(0px,10px,0px,0px);
+}
