@@ -1,37 +1,14 @@
-.yuss {
-  color:white;
-  padding: 100px;
-  background-color: grey;
-  font-family: 'Zilla Slab Highlight', cursive;
-  font-size: 100px;
-  text-align:center;
-  padding-bottom: 120px;
-  border-radius: 15px;
-
-}
-
-
-
-.yuss {
-  -webkit-animation: rainbow 3s infinite;
-   animation: rainbow 3s infinite;
-}
-@-webkit-keyframes rainbow{
-	33%{color: red;}
-	66%{color: green;}
-	100%{color: blue;}
-}
-@keyframes rainbow{
-	33%{color: red;}
-	66%{color: green;}
-	100%{color: blue;}
-}
-
-
-
-
-
-
+.superior {
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+font-weight: bold;
+font-style: italic;
+background-color: red;
+font-size: 100px;
+text-align:center;
+padding-left: 0%;
+padding-right: 1.0%;
+padding-bottom: 1%;
 }
 
 /*.social {*/
@@ -80,4 +57,18 @@ input
 
 .clip {
   clip: rect(0px,10px,0px,0px);
+}
+
+.social {
+  background-color: black;
+
+}
+
+.links {
+  font-size: 18px;
+  padding-left: 2%;
+}
+
+.socialtopbuffer {
+  padding-top: 2%;
 }
