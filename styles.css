@@ -1,14 +1,22 @@
 .superior {
-font-family: Arial, Helvetica, sans-serif;
-color: white;
-font-weight: bold;
-font-style: italic;
-background-color: red;
-font-size: 100px;
-text-align:center;
-padding-left: 0%;
-padding-right: 1.0%;
-padding-bottom: 1%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	background-color: red;
+	font-size: 100px;
+	text-align:center;
+	padding-left: 2%;
+	padding-right: 3.0%;
+	padding-bottom: 1%;
+	/*No Select*/
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 /*.social {*/
@@ -35,8 +43,11 @@ h2 {
 }
 
 .first-info {
-  font-family: 'Sarpanch', sans-serif;
-  color: white;
+  	font-family: Helvetica, sans-serif;
+  	color: white;
+	font-style: normal;
+	font-size: 30px;
+	
 }
 
 input[type="text"], textarea {
@@ -60,14 +71,33 @@ input
 }
 
 .social {
-  background-color: black;
+  	background-color: black;
+	/*No Select*/
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 
 }
 
 .links {
-  font-size: 18px;
-  padding-left: 2%;
+  	font-size: 18px;
+	color:white;
+	animation-name: redlink;
+	transition: 0.3s;
+	padding: 1%;
+  	white-space: nowrap;
+	text-decoration: none;
+	font-family: Helvetica;
 }
+
+.links:hover {
+	background-color: red;
+}
+
 
 .socialtopbuffer {
   padding-top: 2%;
