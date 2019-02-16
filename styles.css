@@ -86,7 +86,6 @@ input
 .links {
   	font-size: 18px;
 	color:white;
-	animation-name: redlink;
 	transition: 0.3s;
 	padding: 1%;
   	white-space: nowrap;
@@ -101,4 +100,17 @@ input
 
 .socialtopbuffer {
   padding-top: 2%;
+}
+
+.joinUs {
+	padding: 15px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color:white;
+	transition: 0.3s;
+  	white-space: nowrap;
+	text-decoration: none;
+}
+
+.joinUs.hover {
+	color:aqua;
 }
