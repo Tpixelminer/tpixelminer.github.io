@@ -20,12 +20,6 @@
                                   supported by Chrome and Opera */
 }
 
-/*.social {*/
-/*  margin: auto;*/
-/*    width: 50%;*/
-
-
-/*}*/
 
 .yest {
   margin: auto;
@@ -48,40 +42,31 @@ h2 {
   	color: white;
 	font-style: normal;
 	font-size: 30px;
+
 	
 }
 
-input[type="text"], textarea {
-
-  background-color : #d1d1d1;
-
-
+.socialLinks {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(black, grey);	
+	font-size: 10px;
+	color:white;
+	transition: 0.3s;
+	padding-bottom: 50px;
+	padding-top: 15px;
+  	white-space: nowrap;
+	text-decoration: none;
+	font-family: Helvetica;
+	
 }
 
-input
-{
-    -moz-border-radius:10px; /* Firefox */
-    -webkit-border-radius: 10px; /* Safari, Chrome */
-    -khtml-border-radius: 10px; /* KHTML */
-    border-radius: 10px; /* CSS3 */
-    behavior:url("border-radius.htc");
-}
-
-.clip {
-  clip: rect(0px,10px,0px,0px);
-}
-
-.social {
-  	background-color: black;
-	/*No Select*/
-	-webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-
+.linkPush {
+	padding-top: 40px;
 }
 
 .links {
@@ -94,27 +79,29 @@ input
 	font-family: Helvetica;
 }
 
-.links:hover {
-	background-color: red;
-}
-
-
-.socialtopbuffer {
-  padding-top: 2%;
-}
-
-.joinUs {
-	padding: 15px;
-	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+.bottomLinks {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 18px;
 	color:white;
 	transition: 0.3s;
+	padding: 1%;
   	white-space: nowrap;
 	text-decoration: none;
 }
 
-.joinUs.hover {
-	color:aqua;
+.bottomLinks:hover {
+	
+	background-color: red;
+
 }
+
+.links:hover {
+	background-color: red;
+	animation: text-shadow-pop-left, 5s, infinite;
+	-webkit-animation: text-shadow-pop-left 5s infinite;
+}
+
+
 
 .smaller-subtext {
 	font-family: Helvetica, sans-serif;
@@ -145,3 +132,4 @@ input
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+
