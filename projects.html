@@ -1,75 +1,38 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Roboto+Mono&display=swap" rel="stylesheet">
-	
-  <link rel="stylesheet" href="styles.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Sarpanch|Zilla+Slab+Highlight" rel="stylesheet">
-
-
-
-  <style>
-    /* Always set the map height explicitly to define the size of the div
-     * element that contains the map. */
-    #map {
-      height: 100%;
-    }
-    /* Optional: Makes the sample page fill the window.
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    } */
-  </style>
-
-
-
-</head>
-<title>Todd-LM</title>
-<body style="background-color: black">
-  <center>
-<span>
-  
-    <span class="superior">Superior</span>
-  
-</span>
-
-<a href="https://github.com/todd-lm">
-
-<h3 class="first-info">By todd-lm</h3>
-</a>
-<a class="links" href="https://todd-lm.github.io/merch">About (Coming soon)</a>
-<a class="links" href="https://todd-lm.github.io/merch">Merch</a>
-<a class="links" href="https://www.youtube.com/channel/UCDIbUrHx5gvL4GEen17hSQA">Memes</a>
-<a class="links" href="https://unsplash.com/@todd_lm">Photography</a>
-<a class="links" href="https://github.com/todd-lm">Code</a>
-<a class="links" href="https://github.com/todd-lm">Projects</a>
-<a class="links" href="mailto:contactsuperior.labs@gmail.com">Contact</a>
-
-<div id="map"></div>
-<script>
-  var map;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 8
-    });
-  }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-async defer></script>
-
-<div class="socialLinks">
-  <div class="linkPush">
-<a  class="bottomLinks" href="https://github.com/todd-lm">Github</a>
-<a  class="bottomLinks" href="https://unsplash.com/@todd_lm">Unsplash</a>
-<a  class="bottomLinks" href="https://www.instagram.com/superior_labs/">Instagram</a>
-<a  class="bottomLinks" href="mailto:contactsuperior.labs@gmail.com">Email</a>
-</div>
-
-</div>
-  </center>
-
-</body>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of NYC
+  var NYC = {lat: 40.7128, lng: -74.0060}; 
+  // The map, centered at NYC
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: NYC});
+  // The marker, positioned at NYC
+  var marker = new google.maps.Marker({position: NYC, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    TODO: Secure API
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+  </body>
 </html>
