@@ -1,135 +1,239 @@
-.superior {
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	font-weight: bold;
-	font-style: italic;
-	background-color: red;
-	font-size: 100px;
-	text-align:center;
-	padding-left: 2%;
-	padding-right: 3.0%;
-	padding-bottom: 1%;
-	text-decoration: none;
-	/*No Select*/
-	-webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight:300;
+  letter-spacing: 1px;
+  font-size:48px;
+}
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgb(2, 41, 126) 0%, rgb(11, 181, 211) 100%);
+  color:white;
 }
 
 
-.yest {
-  margin: auto;
-    width: 50%;
-    border: 3px solid green;
+.inner-header {
+  height:55vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
 
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
 }
 
 
-/*font-family: 'Libre Barcode 39 Text', cursive;*/
-/*font-family: 'Sarpanch', sans-serif;*/
-/*font-family: 'Zilla Slab Highlight', cursive;*/
 
-h2 {
-  color:blue;
+
+
+
+.header-fixed {
+	padding: 20px 40px;
+	height: 10vh;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
 }
 
-.first-info {
-  	font-family: Helvetica, sans-serif;
-  	color: white;
-	font-style: normal;
-	font-size: 30px;
-
-	
-}
-
-.socialLinks {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	color: white;
+.header-fixed .header-limiter {
+	max-width: 1200px;
 	text-align: center;
-	background-image: linear-gradient(black, grey);	
-	font-size: 10px;
-	color:white;
-	transition: 0.3s;
-	padding-bottom: 50px;
-	padding-top: 15px;
-  	white-space: nowrap;
-	text-decoration: none;
-	font-family: Helvetica;
-	
+	margin: 0 auto;
 }
 
-.linkPush {
-	padding-top: 40px;
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 10vh;
+	display: none;
 }
 
-.links {
-  	font-size: 18px;
-	color:white;
-	transition: 0.3s;
-	padding: 1%;
-  	white-space: nowrap;
-	text-decoration: none;
-	font-family: Helvetica;
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 20px;
+	line-height: 40px;
+	margin: 0;
 }
 
-.bottomLinks {
-	font-family: 'Roboto Mono', monospace;
-	font-size: 18px;
-	color:white;
-	transition: 0.3s;
-	padding: 1%;
-  	white-space: nowrap;
+.header-fixed .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/*  navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
 	text-decoration: none;
 }
 
-.bottomLinks:hover {
-	
-	background-color: red;
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding-left: 20px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 751px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
 
 }
 
-.links:hover {
-	background-color: red;
-	animation: text-shadow-pop-left, 5s, infinite;
-	-webkit-animation: text-shadow-pop-left 5s infinite;
+.contact-button {
+font-family: 'IBM Plex Sans', sans-serif;
+  font-weight:400;
+  font-size:30px;
 }
-
-
-
-.smaller-subtext {
-	font-family: Helvetica, sans-serif;
-	color: white;
-  font-style: normal;
-  font-size: 15px;
-  
-}
-
-.superior-link {
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	font-weight: bold;
-	font-style: italic;
-	background-color: red;
-	font-size: 100px;
-	text-align:center;
-	padding-left: 2%;
-	padding-right: 3.0%;
-	padding-bottom: 1%;
-	text-decoration: none;
-	/*No Select*/
-	-webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
-
