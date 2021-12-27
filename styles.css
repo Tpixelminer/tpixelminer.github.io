@@ -13,7 +13,7 @@ h1 {
 p {
   font-family: 'IBM Plex Sans', sans-serif;
   letter-spacing: 1px;
-  font-size:14px;
+  font-size:20px;
   color: #333333;
 }
 
@@ -236,4 +236,56 @@ body.fixed .header-fixed .header-limiter nav {
 font-family: 'IBM Plex Sans', sans-serif;
   font-weight:400;
   font-size:30px;
+}
+
+.work-image {
+
+max-width: 60%;
+max-height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.work-text {
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	letter-spacing: normal;
+}
+
+.awards-list{
+	list-style-type: "🏆 ";
+	font-size: 20px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: bold;
+}
+
+.notable-list{
+	font-size: 20px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: bold;
+}
+
+li {
+	padding: 5px 0px;
+}
+
+.second-work {
+	padding-top: 70px;
+}
+
+.third-work {
+	padding-top: 70px;
+}
+.fourth-work {
+	padding-top: 70px;
+}
+
+.fifth-work {
+	padding-top: 70px;
+}
+
+.external-button {
+	padding-right: 20px;
 }
