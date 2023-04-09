@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
 
+
 body {
   margin:0;
 }
@@ -17,6 +18,14 @@ p {
   color: #333333;
 }
 
+h3 {
+	font-family: 'IBM Plex Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size:3em;
+  font-weight: 600;
+
+}
+
 .header {
   position:relative;
   text-align:center;
@@ -26,7 +35,7 @@ p {
 
 
 .inner-header {
-  height:55vh;
+  height:20vh;
   width:100%;
   margin: 0;
   padding: 0;
@@ -238,6 +247,20 @@ font-family: 'IBM Plex Sans', sans-serif;
   font-size:30px;
 }
 
+.profile-image {
+	
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin-left: 7%;
+  margin-top: 5%;
+  /* margin-right: 10px; */
+  align-self: left;
+
+  /* add rounded corners */
+  border-radius: 10%;
+}
+
 .work-image {
 
 max-width: 65%;
@@ -288,4 +311,24 @@ li {
 
 .external-button {
 	padding-right: 20px;
+}
+
+
+
+
+
+
+
+	.about-me {
+		display: flex;
+		align-items: center;
+		justify-content: center
+}
+
+.about-me p {
+	font-size: 26px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 500;
+	padding-left: 5%;
+	padding-right: 5%;
 }
